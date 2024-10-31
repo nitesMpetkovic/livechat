@@ -1,0 +1,11 @@
+# Ignorisanje sistema i editor fajlova
+*.log
+*.tmp
+.DS_Store
+
+# Ignorisanje XAMPP/WAMP specifičnih fajlova
+/xampp
+/wamp
+
+# Ignorisanje PHP konfiguracionih fajlova
+/config/
