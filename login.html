@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+</head>
+<body>
+    <h2>Prijavite se</h2>
+    <?php if (isset($_GET['error']) && $_GET['error'] == 'incorrect'): ?>
+        <p style="color: red;">Lozinka nije tačna. Pokušajte ponovo.</p>
+    <?php endif; ?>
+    <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Korisničko ime" required>
+        <input type="password" name="password" placeholder="Lozinka" required>
+        <button type="submit">Prijavi se</button>
+    </form>
+    <p>Nemate nalog? <a href="register.html">Registrujte se!</a></p>
+</body>
+</html>
